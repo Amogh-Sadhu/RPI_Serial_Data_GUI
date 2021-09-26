@@ -12,7 +12,7 @@ def serialdatacheck():
         return arduino.readline().decode()
 
     else:
-        return "Error- Saurav chutya"
+        return "Error"
 
 def check_data():
     Label1.config(text = serialdatacheck())    
