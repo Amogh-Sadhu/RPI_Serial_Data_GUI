@@ -3,7 +3,6 @@ import time
 import serial
 
 ser = serial.Serial('COM4',9600)
-data = ':ACVOF,1#'
 reply = ""
 cmnd1  = ":ACVOF,1#"
 cmnd2  = ":ACVZ,1#"
@@ -42,29 +41,6 @@ def click(event):
 
     name_entry6.config(state = tk.NORMAL)
     name_entry6.delete(0, tk.END)
-
-def check_state():
-    chkbtn1_state = var1.get()
-    chkbtn2_state = var2.get()
-    chkbtn3_state = var3.get()
-    chkbtn4_state = var4.get()
-    chkbtn5_state = var5.get()
-    chkbtn6_state = var6.get()
-
-    if(chkbtn1_state == 1):
-        readserial(cmnd13)
-    elif(chkbtn2_state == 1):
-        readserial(cmnd14)
-    elif(chkbtn3_state == 1):
-        readserial(cmnd15)
-    elif(chkbtn4_state == 1):
-        readserial(cmnd16)
-    elif(chkbtn5_state == 1):
-        readserial(cmnd17)
-    elif(chkbtn6_state == 1):
-        readserial(cmnd18)
-    else:
-        print("wrong checkbutton state")
 
 def readserial(cmnd_str):
     global reply
@@ -245,6 +221,7 @@ def readserial(cmnd_str):
     else:
         print("Invalid Command String")
     time.sleep(0.5)
+
 root = tk.Tk()
 root.title("Auto Calibration Desk")
 root.config(bg = "darkgrey")
@@ -279,22 +256,28 @@ Label6 = tk.Label(text= reply,font=("Helvetica", "10"),width=25,height=3,bg="whi
 Label6.grid(row = 2, column = 7, padx = 20)
 
 # Button that will call the readserial function
-button1 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd1: readserial(m) , height=2, width=10)
+button1 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd1: readserial(m) , height=2, width=10)
 button1.place(x = 25, y = 175)
 
-button2 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd2: readserial(m) , height=2, width=10)
+button2 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd2: readserial(m) , height=2, width=10)
 button2.place(x = 273, y = 175)
 
-button3 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd3: readserial(m) , height=2, width=10)
+button3 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd3: readserial(m) , height=2, width=10)
 button3.place(x = 521 , y = 175)
 
-button4 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd4: readserial(m) , height=2, width=10)
+button4 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd4: readserial(m) , height=2, width=10)
 button4.place(x = 769, y = 175)
 
-button5 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd5: readserial(m) , height=2, width=10)
+button5 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd5: readserial(m) , height=2, width=10)
 button5.place(x = 1017, y = 175)
 
-button6 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd6: readserial(m) , height=2, width=10)
+button6 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd6: readserial(m) , height=2, width=10)
 button6.place(x = 1265, y = 175)
 
 Label7 = tk.Label(text= reply,font=("Helvetica", "10"),width=25,height=3,bg="white")
@@ -317,22 +300,28 @@ Label12.grid(row = 4, column = 7, padx = 20)
 
 #creating buttons
 
-button7 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd7: readserial(m) , height=2, width=10)
+button7 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd7: readserial(m) , height=2, width=10)
 button7.place(x = 25, y = 430)
 
-button8 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd8: readserial(m) , height=2, width=10)
+button8 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd8: readserial(m) , height=2, width=10)
 button8.place(x = 273, y = 430)
 
-button9 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd9: readserial(m)  , height=2, width=10)
+button9 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                    command= lambda m= cmnd9: readserial(m)  , height=2, width=10)
 button9.place(x = 521, y = 430)
 
-button10 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd10: readserial(m)  , height=2, width=10)
+button10 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                     command= lambda m= cmnd10: readserial(m)  , height=2, width=10)
 button10.place(x = 769, y = 430)
 
-button11 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd11: readserial(m) , height=2, width=10)
+button11 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                     command= lambda m= cmnd11: readserial(m) , height=2, width=10)
 button11.place(x = 1017, y = 430)
 
-button12 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',command= lambda m= cmnd12: readserial(m) , height=2, width=10)
+button12 = tk.Button(root, text='Scan',font = ("Helvetica","10"), fg='black', bg='grey',
+                     command= lambda m= cmnd12: readserial(m) , height=2, width=10)
 button12.place(x = 1265, y = 430)
 
 Label13 = tk.Label(text= reply,font=("Helvetica", "10"),width=25,height=3,bg="white")
@@ -390,30 +379,22 @@ name_entry6.insert(0,"Enter Data")
 name_entry6.config(state = tk.DISABLED)
 name_entry6.bind("<Button-1>",click)
 
-var1 = tk.IntVar()
-var2 = tk.IntVar()
-var3 = tk.IntVar()
-var4 = tk.IntVar()
-var5 = tk.IntVar()
-var6 = tk.IntVar()
-
-chk_btn1 = tk.Checkbutton(root, text="Send", variable=var1, command = check_state)
+chk_btn1 = tk.Checkbutton(root, text="Send", command = lambda m= cmnd13: readserial(m))
 chk_btn1.place(x =32 , y = 713)
 
-chk_btn2 = tk.Checkbutton(root, text="Send", variable=var2, command = check_state)
+chk_btn2 = tk.Checkbutton(root, text="Send", command = lambda m= cmnd14: readserial(m))
 chk_btn2.place(x =280 , y = 713)
 
-chk_btn3 = tk.Checkbutton(root, text="Send", variable=var3, command = check_state)
+chk_btn3 = tk.Checkbutton(root, text="Send", command = lambda m= cmnd15: readserial(m))
 chk_btn3.place(x =528 , y = 713)
 
-chk_btn4 = tk.Checkbutton(root, text="Send", variable=var4, command = check_state)
+chk_btn4 = tk.Checkbutton(root, text="Send", command = lambda m= cmnd16: readserial(m))
 chk_btn4.place(x =776 , y = 713)
 
-chk_btn5 = tk.Checkbutton(root, text="Send", variable=var5, command = check_state)
+chk_btn5 = tk.Checkbutton(root, text="Send", command = lambda m= cmnd17: readserial(m))
 chk_btn5.place(x =1024 , y = 713)
 
-chk_btn6 = tk.Checkbutton(root, text="Send", variable=var6, command = check_state)
+chk_btn6 = tk.Checkbutton(root, text="Send", command = lambda m= cmnd18: readserial(m))
 chk_btn6.place(x =1272 , y = 713)
-
 
 root.mainloop()
