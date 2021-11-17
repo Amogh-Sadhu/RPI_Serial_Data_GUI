@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Calibration Desk</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(254, 234, 230);</string>
+  </property>
   <widget class="QLabel" name="text_label1">
    <property name="geometry">
     <rect>
@@ -21,6 +24,9 @@
      <width>111</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="text">
     <string>AC Voltage Offset</string>
@@ -35,6 +41,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
+   </property>
    <property name="text">
     <string>AC Voltage Zero</string>
    </property>
@@ -44,9 +53,12 @@
     <rect>
      <x>20</x>
      <y>110</y>
-     <width>131</width>
+     <width>101</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="text">
     <string>AC Voltage Max</string>
@@ -61,6 +73,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
+   </property>
    <property name="text">
     <string>DC Voltage Offset</string>
    </property>
@@ -74,6 +89,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
+   </property>
    <property name="text">
     <string>DC Voltage Zero</string>
    </property>
@@ -83,9 +101,12 @@
     <rect>
      <x>20</x>
      <y>200</y>
-     <width>111</width>
+     <width>101</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="text">
     <string>DC Voltage Max</string>
@@ -100,6 +121,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
+   </property>
    <property name="text">
     <string>Power Factor</string>
    </property>
@@ -113,6 +137,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
+   </property>
    <property name="text">
     <string>ACW</string>
    </property>
@@ -122,9 +149,12 @@
     <rect>
      <x>280</x>
      <y>110</y>
-     <width>111</width>
+     <width>91</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="text">
     <string>DCW</string>
@@ -135,9 +165,12 @@
     <rect>
      <x>280</x>
      <y>170</y>
-     <width>111</width>
+     <width>91</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="text">
     <string>ARSL</string>
@@ -152,6 +185,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
+   </property>
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
@@ -164,9 +200,12 @@
     <rect>
      <x>280</x>
      <y>140</y>
-     <width>111</width>
+     <width>91</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="text">
     <string>EFP</string>
@@ -191,6 +230,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
+   </property>
    <property name="text">
     <string>Channel No.</string>
    </property>
@@ -203,6 +245,9 @@
      <width>93</width>
      <height>28</height>
     </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
    </property>
    <property name="text">
     <string>Scan</string>
@@ -217,6 +262,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
   <widget class="QPushButton" name="reset">
    <property name="geometry">
@@ -226,6 +274,12 @@
      <width>93</width>
      <height>28</height>
     </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
    </property>
    <property name="text">
     <string>Reset</string>
@@ -263,19 +317,6 @@
     <string>Auto Calibrator</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_15">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>130</y>
-     <width>71</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Enter Data</string>
-   </property>
-  </widget>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
@@ -286,7 +327,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(171, 171, 171);</string>
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -455,7 +496,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(171, 171, 171);</string>
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -474,7 +515,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(171, 171, 171);</string>
+    <string notr="true">background-color: rgb(254, 219, 208);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>
@@ -482,6 +523,22 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(254, 219, 208);</string>
+    </property>
+    <property name="text">
+     <string>Enter Data</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
@@ -642,7 +699,6 @@
   <zorder>frame_3</zorder>
   <zorder>frame_2</zorder>
   <zorder>frame</zorder>
-  <zorder>text_label1</zorder>
   <zorder>text_label2</zorder>
   <zorder>text_label3</zorder>
   <zorder>text_label4</zorder>
@@ -661,13 +717,13 @@
   <zorder>reset</zorder>
   <zorder>progressBar</zorder>
   <zorder>label_14</zorder>
-  <zorder>label_15</zorder>
   <zorder>label_7</zorder>
   <zorder>label_8</zorder>
   <zorder>label_9</zorder>
   <zorder>label_10</zorder>
   <zorder>label_11</zorder>
   <zorder>label_12</zorder>
+  <zorder>text_label1</zorder>
  </widget>
  <resources/>
  <connections/>
