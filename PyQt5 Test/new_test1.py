@@ -8,9 +8,8 @@ import serial
 
 start = ','
 end = '#'
+global ser
 
-
-ser = serial.Serial('COM4',9600)
 reply = ""
 cmnd1  = ":ACVOF,1#"
 cmnd2  = ":ACVZ,1#"
@@ -35,6 +34,15 @@ class main_screen(QDialog):
         self.progressBar.setValue(0)
         self.reset.clicked.connect(self.resetlabel)
         self.scan.clicked.connect(self.readserial)
+        try:
+            global ser
+            ser = serial.Serial('COM4', 9600)
+            self.label_16.setText("Connected")
+            self.label_16.setAlignment(QtCore.Qt.AlignCenter)
+        except:
+            print("not port connected")
+            self.label_16.setText("Not connected")
+            self.label_16.setAlignment(QtCore.Qt.AlignCenter)
 
     def resetlabel(self):
         self.label_1.setText("")
@@ -139,7 +147,6 @@ class main_screen(QDialog):
         time.sleep(2)
         if ser.in_waiting > 0:
             reply = ser.readline().decode()
-            #reply = "abhijeet"
             print("Reply from arduino = "+reply)
             self.label_7.setText(reply)
             self.label_7.setAlignment(QtCore.Qt.AlignCenter)
@@ -207,6 +214,8 @@ class main_screen(QDialog):
         self.data_field.setText("")
         time.sleep(0.1)
         self.progressBar.setValue(100)
+
+
 #main
 if __name__ == "__main__":
     app = QApplication(sys.argv)
