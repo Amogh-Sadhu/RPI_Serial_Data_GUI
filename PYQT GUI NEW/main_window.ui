@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>679</width>
-    <height>319</height>
+    <width>694</width>
+    <height>290</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,13 +21,13 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>170</y>
+      <y>140</y>
       <width>111</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -37,8 +37,8 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>200</y>
+      <x>390</x>
+      <y>170</y>
       <width>111</width>
       <height>20</height>
      </rect>
@@ -62,8 +62,8 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QPushButton" name="reset">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>190</y>
+      <x>550</x>
+      <y>160</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -74,6 +74,9 @@ background-color: rgb(208, 208, 208);</string>
     <property name="tabletTracking">
      <bool>false</bool>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;</string>
+    </property>
     <property name="text">
      <string>Reset</string>
     </property>
@@ -82,8 +85,8 @@ background-color: rgb(208, 208, 208);</string>
     <property name="geometry">
      <rect>
       <x>520</x>
-      <y>40</y>
-      <width>151</width>
+      <y>10</y>
+      <width>161</width>
       <height>191</height>
      </rect>
     </property>
@@ -107,7 +110,7 @@ background-color: rgb(208, 208, 208);</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
      </property>
      <property name="text">
@@ -118,8 +121,8 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>170</y>
+      <x>390</x>
+      <y>140</y>
       <width>111</width>
       <height>20</height>
      </rect>
@@ -146,14 +149,14 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="text_label9">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>110</y>
+      <x>290</x>
+      <y>80</y>
       <width>91</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -163,14 +166,15 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>50</y>
+      <x>390</x>
+      <y>20</y>
       <width>111</width>
       <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::WinPanel</enum>
@@ -188,8 +192,8 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>80</y>
+      <x>390</x>
+      <y>50</y>
       <width>111</width>
       <height>20</height>
      </rect>
@@ -217,13 +221,13 @@ background-color: rgb(208, 208, 208);</string>
     <property name="geometry">
      <rect>
       <x>530</x>
-      <y>50</y>
-      <width>71</width>
+      <y>20</y>
+      <width>81</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -233,14 +237,14 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="text_label8">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>80</y>
+      <x>290</x>
+      <y>50</y>
       <width>91</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -250,9 +254,9 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>10</y>
-      <width>191</width>
+      <x>90</x>
+      <y>210</y>
+      <width>171</width>
       <height>20</height>
      </rect>
     </property>
@@ -276,13 +280,13 @@ background-color: rgb(208, 208, 208);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>200</y>
-      <width>101</width>
+      <y>170</y>
+      <width>111</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -292,9 +296,9 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>40</y>
-      <width>241</width>
+      <x>280</x>
+      <y>10</y>
+      <width>231</width>
       <height>191</height>
      </rect>
     </property>
@@ -312,14 +316,17 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QPushButton" name="scan">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>80</y>
+      <x>550</x>
+      <y>50</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="mouseTracking">
      <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;</string>
     </property>
     <property name="text">
      <string>Scan</string>
@@ -328,8 +335,8 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLineEdit" name="data_field">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>150</y>
+      <x>540</x>
+      <y>120</y>
       <width>121</width>
       <height>21</height>
      </rect>
@@ -342,13 +349,13 @@ background-color: rgb(208, 208, 208);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>50</y>
-      <width>111</width>
+      <y>20</y>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -358,14 +365,23 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="text_label7">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>50</y>
+      <x>290</x>
+      <y>20</y>
       <width>91</width>
       <height>21</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Poppins SemiBold</family>
+      <pointsize>8</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -376,13 +392,13 @@ background-color: rgb(208, 208, 208);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>110</y>
-      <width>101</width>
+      <y>80</y>
+      <width>111</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -392,14 +408,14 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="text_label12">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>200</y>
+      <x>290</x>
+      <y>170</y>
       <width>81</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="frameShadow">
@@ -412,14 +428,14 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="text_label11">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>170</y>
+      <x>290</x>
+      <y>140</y>
       <width>91</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -430,8 +446,8 @@ background-color: rgb(208, 208, 208);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>40</y>
-      <width>251</width>
+      <y>10</y>
+      <width>261</width>
       <height>191</height>
      </rect>
     </property>
@@ -448,14 +464,15 @@ background-color: rgb(208, 208, 208);</string>
     <widget class="QLabel" name="label_1">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>140</x>
        <y>11</y>
        <width>111</width>
        <height>20</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">
+background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::WinPanel</enum>
@@ -473,7 +490,7 @@ background-color: rgb(208, 208, 208);</string>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>140</x>
        <y>40</y>
        <width>111</width>
        <height>20</height>
@@ -498,7 +515,7 @@ background-color: rgb(208, 208, 208);</string>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>140</x>
        <y>70</y>
        <width>111</width>
        <height>20</height>
@@ -523,7 +540,7 @@ background-color: rgb(208, 208, 208);</string>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>140</x>
        <y>100</y>
        <width>111</width>
        <height>20</height>
@@ -548,7 +565,7 @@ background-color: rgb(208, 208, 208);</string>
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>140</x>
        <y>130</y>
        <width>111</width>
        <height>20</height>
@@ -573,7 +590,7 @@ background-color: rgb(208, 208, 208);</string>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>140</x>
        <y>160</y>
        <width>111</width>
        <height>20</height>
@@ -600,13 +617,13 @@ background-color: rgb(208, 208, 208);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>80</y>
+      <y>50</y>
       <width>111</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -616,14 +633,14 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="text_label10">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>140</y>
+      <x>290</x>
+      <y>110</y>
       <width>91</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -633,8 +650,8 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>140</y>
+      <x>390</x>
+      <y>110</y>
       <width>111</width>
       <height>20</height>
      </rect>
@@ -658,8 +675,8 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>110</y>
+      <x>390</x>
+      <y>80</y>
       <width>111</width>
       <height>20</height>
      </rect>
@@ -683,8 +700,8 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QSpinBox" name="spinBox">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>50</y>
+      <x>620</x>
+      <y>20</y>
       <width>42</width>
       <height>21</height>
      </rect>
@@ -694,13 +711,13 @@ background-color: rgb(208, 208, 208);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>140</y>
-      <width>111</width>
+      <y>110</y>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;
 background-color: rgb(208, 208, 208);</string>
     </property>
     <property name="text">
@@ -710,9 +727,9 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QProgressBar" name="progressBar">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>240</y>
-      <width>661</width>
+      <x>280</x>
+      <y>210</y>
+      <width>411</width>
       <height>21</height>
      </rect>
     </property>
@@ -726,14 +743,14 @@ background-color: rgb(208, 208, 208);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>10</y>
-      <width>71</width>
-      <height>16</height>
+      <x>10</x>
+      <y>210</y>
+      <width>81</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 63 8pt &quot;Poppins SemiBold&quot;;</string>
     </property>
     <property name="text">
      <string>Port Status</string>
@@ -774,7 +791,7 @@ background-color: rgb(208, 208, 208);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>679</width>
+     <width>694</width>
      <height>26</height>
     </rect>
    </property>
@@ -801,6 +818,9 @@ background-color: rgb(208, 208, 208);</string>
      </property>
      <property name="title">
       <string>Port</string>
+     </property>
+     <property name="toolTipsVisible">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QMenu" name="menuBoard">
