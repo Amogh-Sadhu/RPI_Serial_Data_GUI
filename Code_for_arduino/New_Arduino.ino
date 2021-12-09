@@ -4,22 +4,16 @@ String user_data = "";
 String cmnd1  = "ACVOF";
 String cmnd2  = "ACVZ";
 String cmnd3  = "ACVM";
-String cmnd4  = "ACVOF";
-String cmnd5  = "ACVZ";
-String cmnd6  = "ACVM";
-String cmnd7  = "DCVOF";
-String cmnd8  = "DCVZ";
-String cmnd9  = "DCVM";
-String cmnd10 = "DCVOF";
-String cmnd11 = "DCVZ";
-String cmnd12 = "DCVM";
-String cmnd13  = "PF";
-String cmnd14  = "ACW";
-String cmnd15  = "DCW";
-String cmnd16  = "EFP";
-String cmnd17  = "ARSL";
-String cmnd18  = "SVS";
-int data1 = 50; 
+String cmnd4  = "DCVOF";
+String cmnd5  = "DCVZ";
+String cmnd6  = "DCVM";
+String cmnd7  = "PF";
+String cmnd8  = "ACW";
+String cmnd9  = "DCW";
+String cmnd10  = "EFP";
+String cmnd11  = "ARSL";
+String cmnd12  = "SVS";
+int  data1 = 1; 
 /*..............................................................................................................*/
 
 String getValue(String data, char separator, int index)
@@ -79,75 +73,45 @@ void loop()
     } 
     else if(cmnd_str.equals(cmnd4))
     {
-      sprintf(dataString,":ACVOF,2,%d#",data1);
-      Serial.println(dataString);
-    } 
-    else if(cmnd_str.equals(cmnd5))
-    {
-      sprintf(dataString,":ACVZ,2,%d#",data1);
-      Serial.println(dataString);
-    } 
-    else if(cmnd_str.equals(cmnd6))
-    {
-      sprintf(dataString,":ACVM,2,%d#",data1);
-      Serial.println(dataString);
-    } 
-    else if(cmnd_str.equals(cmnd7))
-    {
       sprintf(dataString,":DCVOF,1,%d#",data1);
       Serial.println(dataString);
     }
-    else if(cmnd_str.equals(cmnd8))
+    else if(cmnd_str.equals(cmnd5))
     {
       sprintf(dataString,":DCVZ,1,%d#",data1);
       Serial.println(dataString);
     }
-    else if(cmnd_str.equals(cmnd9))
+    else if(cmnd_str.equals(cmnd6))
     {
       sprintf(dataString,":DCVM,1,%d#",data1);
       Serial.println(dataString);
     }
-    else if(cmnd_str.equals(cmnd10))
-    {
-      sprintf(dataString,":DCVOF,2,%d#",data1);
-      Serial.println(dataString);
-    }
-    else if(cmnd_str.equals(cmnd11))
-    {
-      sprintf(dataString,":DCVZ,2,%d#",data1);
-      Serial.println(dataString);
-    }
-    else if(cmnd_str.equals(cmnd12))
-    {
-      sprintf(dataString,":DCVM,2,%d#",data1);
-      Serial.println(dataString);
-    }
-    else if(cmnd_str.equals(cmnd13))
+    else if(cmnd_str.equals(cmnd7))
     {
       sprintf(dataString,":PF,1#");
       Serial.println(dataString);
     }
-    else if(cmnd_str.equals(cmnd14))
+    else if(cmnd_str.equals(cmnd8))
     {
       sprintf(dataString,":ACW,1#");
       Serial.println(dataString);
     }
-    else if(cmnd_str.equals(cmnd15))
+    else if(cmnd_str.equals(cmnd9))
     {
       sprintf(dataString,":DCW,1#");
       Serial.println(dataString);
     }
-    else if(cmnd_str.equals(cmnd16))
+    else if(cmnd_str.equals(cmnd10))
     {
       sprintf(dataString,":EFP,1#");
       Serial.println(dataString);
     }
-    else if(cmnd_str.equals(cmnd17))
+    else if(cmnd_str.equals(cmnd11))
     {
       sprintf(dataString,":ARSL,2#");
       Serial.println(dataString);
     }
-    else if(cmnd_str.equals(cmnd18))
+    else if(cmnd_str.equals(cmnd12))
     {
       sprintf(dataString,":SVS,2#");
       Serial.println(dataString);
@@ -157,6 +121,6 @@ void loop()
       Serial.println("Command not recieved");
     } 
     
-    data1 = data1 + 1;
+    data1 = data1 + 1.045;
   }  
 }
